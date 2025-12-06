@@ -17,9 +17,16 @@ const MathBlock: React.FC<MathBlockProps> = ({ latex, block = false, className =
           throwOnError: false,
           displayMode: block,
           output: 'html', // Use HTML output for better accessibility and rendering
+          strict: false,  // Be less strict about LaTeX conformity
         });
-      } catch (error) {
-        console.error('KaTeX rendering error:', error);
+      } catch (error: any) {
+        // Silently handle quirks mode error by falling back to text
+        if (error && error.message && error.message.includes('quirks mode')) {
+          console.warn('KaTeX requires Standards Mode (<!DOCTYPE html>). Falling back to text display.');
+        } else {
+          console.error('KaTeX rendering error:', error);
+        }
+        // Fallback to displaying raw LaTeX
         containerRef.current.innerText = latex;
       }
     }
