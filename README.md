@@ -83,7 +83,11 @@ Follow these steps to get a local copy up and running.
 
 ## 📸 Screenshots | لقطات شاشة
 
-![Al-Khwarizmi Math Studio Interface](screenshot.jpg)
+![Al-Khwarizmi Math Studio Interface](https://placehold.co/1200x800/020617/2dd4bf?text=Al-Khwarizmi+Math+Studio&font=cairo)
+
+> **Note:** To see the actual application screenshot, please run the application locally or upload a `screenshot.jpg` to your repository.
+>
+> **ملاحظة:** لرؤية لقطة الشاشة الفعلية، يرجى تشغيل التطبيق محلياً أو رفع صورة باسم `screenshot.jpg` إلى المستودع الخاص بك.
 
 ## 🤝 Contributing | المساهمة
 
