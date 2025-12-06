@@ -83,7 +83,7 @@ Follow these steps to get a local copy up and running.
 
 ## 📸 Screenshots | لقطات شاشة
 
-*(Placeholder for screenshots - أضف صور التطبيق هنا)*
+![Al-Khwarizmi Math Studio Interface](screenshot.jpg)
 
 ## 🤝 Contributing | المساهمة
 

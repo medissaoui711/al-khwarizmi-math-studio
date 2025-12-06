@@ -32,7 +32,8 @@ const MathBlock: React.FC<MathBlockProps> = ({ latex, block = false, className =
     }
   }, [latex, block]);
 
-  return <span ref={containerRef} className={`math-font ${className}`} dir="ltr" />;
+  // Use 'inherit' for color so it adapts to dark/light mode parents
+  return <span ref={containerRef} className={`math-font ${className}`} style={{ color: 'inherit' }} dir="ltr" />;
 };
 
 export default MathBlock;
